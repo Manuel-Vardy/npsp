@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   description:
     "The National Private Teacher Engagement Programme connects licensed teachers with private schools across Ghana.",
   icons: {
-    icon: "/logos/NPSP-favicon.png",
+    icon: "/logos/NPSP-favicon-coloured.png",
+    apple: "/logos/NPSP-favicon-coloured.png",
   },
 };
 
