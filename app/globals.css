@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ghana accent colours */
+  --color-ghana-red: #ce1126;
+  --color-ghana-gold: #fcd116;
+  --color-ghana-green: #006b3f;
+
+  /* Typography */
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+
+  /* Base palette */
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
