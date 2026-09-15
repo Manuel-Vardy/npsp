@@ -41,7 +41,7 @@ export default function HeroSection({
     <section
       className={`${bgClass} ${
         backgroundImage
-          ? "w-full min-h-svh flex items-start md:items-center -mt-[6.5rem] md:-mt-[7.5rem]"
+          ? "w-full min-h-svh flex items-center -mt-[6.5rem] md:-mt-[7.5rem]"
           : "-mt-[6.5rem] md:-mt-[7.5rem]"
       } ${
         align === "left" ? "pt-[8.5rem] md:pt-[9.5rem] pb-20 md:pb-28" : "pb-20 px-4 sm:px-6 lg:px-8 pt-[8.5rem] md:pt-[7.5rem]"

@@ -72,18 +72,39 @@ export default function Navbar() {
 
           {/* Desktop auth links */}
           <div className="hidden md:flex items-center gap-2 flex-shrink-0">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center px-4 py-2 rounded-full text-sm font-medium text-white/90 border border-white/20 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              Login
-            </Link>
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-full text-sm font-semibold bg-[#FCD116] text-blue-950 hover:bg-yellow-300 transition-colors duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD116] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              Register
-            </Link>
+            <div className="relative group">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-1.5 px-5 py-2 rounded-full text-sm font-medium text-white/90 border border-white/20 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                aria-haspopup="menu"
+                aria-expanded="false"
+              >
+                Login
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div
+                role="menu"
+                className="absolute right-0 top-full mt-2 w-52 rounded-xl bg-black/70 backdrop-blur-xl border border-white/10 py-1.5 shadow-2xl opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 ease-out"
+              >
+                <Link
+                  href="#"
+                  role="menuitem"
+                  className="block px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-[#FCD116] transition-colors duration-150"
+                >
+                  For Teachers
+                </Link>
+                <div className="h-px bg-white/10 mx-2 my-0.5" aria-hidden="true" />
+                <Link
+                  href="#"
+                  role="menuitem"
+                  className="block px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-[#FCD116] transition-colors duration-150"
+                >
+                  For Schools
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Hamburger toggle */}
@@ -139,21 +160,24 @@ export default function Navbar() {
               );
             })}
 
-              <div className="flex gap-2 pt-2 mt-1 border-t border-white/10">
-                <Link
-                  href="#"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex-1 text-center px-3 py-2 rounded-full text-sm font-medium text-white/90 border border-white/20 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
-                >
-                  Login
-                </Link>
-                <Link
-                  href="#"
-                  onClick={() => setMenuOpen(false)}
-                  className="flex-1 text-center px-3 py-2 rounded-full text-sm font-semibold bg-[#FCD116] text-blue-950 hover:bg-yellow-300 transition-colors duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD116] focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
-                >
-                  Register
-                </Link>
+              <div className="pt-2 mt-1 border-t border-white/10">
+                <p className="text-xs uppercase tracking-wider text-white/50 px-3 pb-1.5 pt-0.5">Login</p>
+                <div className="flex flex-col gap-1">
+                  <Link
+                    href="#"
+                    onClick={() => setMenuOpen(false)}
+                    className="w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-white/90 border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+                  >
+                    For Teachers
+                  </Link>
+                  <Link
+                    href="#"
+                    onClick={() => setMenuOpen(false)}
+                    className="w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-white/90 border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+                  >
+                    For Schools
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
