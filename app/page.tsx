@@ -253,7 +253,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-y-8 gap-x-4 sm:gap-x-6 lg:hidden max-w-5xl mx-auto">
+          <div className="grid grid-cols-3 sm:grid-cols-4 lg:hidden gap-y-8 gap-x-4 sm:gap-x-6 max-w-5xl mx-auto">
             {[
               "/images/MOE.png",
               "/images/NTC.png",
@@ -261,6 +261,7 @@ export default function HomePage() {
               "/images/GNACOPS.png",
               "/images/GNAPS.png",
               "/images/GES.png",
+              "/images/trite-logo-black.png",
             ].map((logo, i) => (
               <div
                 key={i}
@@ -285,6 +286,7 @@ export default function HomePage() {
                 "/images/GNACOPS.png",
                 "/images/GNAPS.png",
                 "/images/GES.png",
+                "/images/trite-logo-black.png",
                 ...[
                   "/images/MOE.png",
                   "/images/NTC.png",
@@ -292,6 +294,7 @@ export default function HomePage() {
                   "/images/GNACOPS.png",
                   "/images/GNAPS.png",
                   "/images/GES.png",
+                  "/images/trite-logo-black.png",
                 ],
               ].map((logo, i) => (
                 <div

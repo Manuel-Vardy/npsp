@@ -221,7 +221,7 @@ export default function AboutPage() {
             <div className="flex justify-center lg:justify-end h-full">
               <div className="relative w-full max-w-xl aspect-[4/3] lg:h-full lg:aspect-auto rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/images/about-npsp-1.jpg"
+                  src="/images/program-1.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 30vw, 100vw"
@@ -290,7 +290,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="relative rounded-xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/unemployed-teacher.jpg"
+                  src="/images/teacher-supply.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 768px) 66vw, 100vw"
@@ -308,7 +308,7 @@ export default function AboutPage() {
               </div>
               <div className="relative rounded-xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/informality.jpg"
+                  src="/images/dificit.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 768px) 66vw, 100vw"
@@ -326,7 +326,7 @@ export default function AboutPage() {
               </div>
               <div className="relative rounded-xl overflow-hidden min-h-[400px]">
                 <Image
-                  src="/images/compliance.jpg"
+                  src="/images/reliability.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 768px) 66vw, 100vw"
@@ -396,38 +396,40 @@ export default function AboutPage() {
           <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
             NPSP has three pathways depending on your current situation.
           </p>
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-             {[
-               {
-                 track: "Track A",
-                 title: "New Placement",
-                 desc: "For newly licensed teachers seeking their first structured placement in a private school.",
-                 color: "border-blue-600 bg-blue-50",
-               },
-               {
-                 track: "Track B1",
-                 title: "Formalization",
-                 desc: "For licensed teachers already working informally in a private school who want to formalize their engagement.",
-                 color: "border-green-600 bg-green-50",
-               },
-               {
-                 track: "Track B2",
-                 title: "Regularization",
-                 desc: "For existing teachers without a full NTC licence who want to pursue the GTLE pathway toward licensure.",
-                 color: "border-red-600 bg-red-50",
-               },
-              ].map((t) => (
-                <div key={t.track} className="p-4">
-                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-1">
-                    {t.track}
-                  </p>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">
-                    {t.title}
-                  </h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">{t.desc}</p>
-                </div>
-              ))}
-           </div>
+          <div className="border-y border-gray-300 divide-y md:divide-y-0 md:divide-x divide-gray-300 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3">
+            {[
+              {
+                track: "Track A",
+                title: "New Placement",
+                desc: "For newly licensed teachers seeking their first structured placement in a private school.",
+              },
+              {
+                track: "Track B1",
+                title: "Formalization",
+                desc: "For licensed teachers already working informally in a private school who want to formalize their engagement.",
+              },
+              {
+                track: "Track B2",
+                title: "Regularization",
+                desc: "For existing teachers without a full NTC licence who want to pursue the GTLE pathway toward licensure.",
+              },
+            ].map((t) => (
+              <div
+                key={t.track}
+                className="py-10 px-6 sm:px-8 lg:px-10 flex flex-col justify-start"
+              >
+                <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">
+                  {t.track}
+                </p>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">
+                  {t.title}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                  {t.desc}
+                </p>
+              </div>
+            ))}
+          </div>
          </div>
        </section>
 

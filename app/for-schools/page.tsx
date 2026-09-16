@@ -75,7 +75,7 @@ export default function ForSchoolsPage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-full max-w-lg aspect-[3/2] rounded-xl overflow-hidden shadow-lg">
                 <Image
-                  src="/images/img3.jpg"
+                  src="/images/participate.jpg"
                   alt=""
                   fill
                   sizes="(min-width: 1024px) 30vw, 100vw"
@@ -133,11 +133,6 @@ export default function ForSchoolsPage() {
               className="!shadow-none !rounded-none hover:!shadow-none"
             />
             <FeatureCard
-              title="Manage Remittances"
-              description="Submit monthly remittances of GH₵1,500 per engaged teacher to the CAMDM account."
-              className="!shadow-none !rounded-none hover:!shadow-none"
-            />
-            <FeatureCard
               title="Monitor Compliance"
               description="Track your school's compliance status, payment records, and programme obligations."
               className="!shadow-none !rounded-none hover:!shadow-none"
@@ -192,11 +187,6 @@ export default function ForSchoolsPage() {
             />
             <ProcessStep
               stepNumber={7}
-              title="Remit Programme Funds"
-              description="Transfer GH₵1,500 per teacher to the CAMDM account each month."
-            />
-            <ProcessStep
-              stepNumber={8}
               title="Maintain Compliance"
               description="Stay compliant with programme standards and NaSIA requirements."
             />

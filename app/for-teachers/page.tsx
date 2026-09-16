@@ -90,24 +90,12 @@ const journeySteps = [
   },
   {
     stepNumber: 6,
-    title: "Confirm Monthly Work",
-    description:
-      "Submit your monthly confirmation each month via the platform to trigger the payment verification process.",
-  },
-  {
-    stepNumber: 7,
-    title: "Receive Allowance",
-    description:
-      "Receive your GH₵1,300 monthly allowance through your chosen payment channel — bank transfer, MTN MoMo, Telecel Cash, or AT Money.",
-  },
-  {
-    stepNumber: 8,
     title: "Build Experience",
     description:
       "Accumulate CPD points, professional experience, and build your teaching record throughout the 24-month engagement.",
   },
   {
-    stepNumber: 9,
+    stepNumber: 7,
     title: "Transition",
     description:
       "After 24 months, transition to permanent employment at your school, pursue the public sector, or renew through the programme pipeline.",
