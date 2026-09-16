@@ -33,22 +33,6 @@ export default function FAQsPage() {
             FAQ Categories
           </h2>
 
-          {/* Category navigation */}
-          <nav
-            className="flex flex-wrap gap-2 justify-center mb-12"
-            aria-label="FAQ category links"
-          >
-            {faqs.map((cat) => (
-              <a
-                key={cat.id}
-                href={`#faq-${cat.id}`}
-                className="px-4 py-2 rounded-full text-sm font-semibold bg-blue-50 text-blue-800 hover:bg-blue-100 transition-colors border border-blue-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600"
-              >
-                {cat.name}
-              </a>
-            ))}
-          </nav>
-
           {/* FAQ sections */}
           <div className="max-w-3xl mx-auto space-y-16">
             {faqs.map((category) => (
@@ -85,10 +69,10 @@ export default function FAQsPage() {
             </h2>
             <p className="text-gray-600 mb-6">
               Our support team is here to help. Reach out through the contact
-              page and we&apos;ll get back to you.
+              form on the About NPSP page and we&apos;ll get back to you.
             </p>
             <a
-              href="#"
+              href="/about#contact"
               className="inline-block px-6 py-3 rounded-lg font-semibold bg-blue-800 text-white hover:bg-blue-700 transition-colors"
             >
               Contact Support

@@ -12,9 +12,9 @@ export default function HomePage() {
       <HeroSection
         heading="Placing licensed teachers in Ghana's private schools."
         ctaButtons={[
-          { label: "For Teachers", href: "#", variant: "primary" },
-          { label: "For Schools", href: "#", variant: "primary" },
-          { label: "Learn About NPSP", href: "#", variant: "secondary" },
+          { label: "For Teachers", href: "/for-teachers", variant: "primary" },
+          { label: "For Schools", href: "/for-schools", variant: "primary" },
+          { label: "Learn About NPSP", href: "/about", variant: "secondary" },
         ]}
         backgroundVariant="blue"
         backgroundImage="/images/hero-img-1.jpg"
@@ -86,7 +86,7 @@ export default function HomePage() {
           </div>
           <div className="text-center">
             <Link
-              href="#"
+              href="/about"
               className="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-colors duration-200 ease-out"
             >
               Understand the Challenge
@@ -154,7 +154,7 @@ export default function HomePage() {
               </div>
 
               <Link
-                href="#"
+                href="/about"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
               >
                 See How It Works
@@ -203,7 +203,7 @@ export default function HomePage() {
                   confirm your monthly work.
                 </p>
                 <Link
-                  href="#"
+                  href="/for-teachers"
                   className="mt-auto inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold border-2 border-white text-white hover:bg-white hover:text-blue-950 transition-all duration-200 w-fit"
                 >
                   Teacher Information
@@ -229,7 +229,7 @@ export default function HomePage() {
                   maintain programme compliance.
                 </p>
                 <Link
-                  href="#"
+                  href="/for-schools"
                   className="mt-auto inline-flex items-center justify-center px-6 py-3 rounded-full font-semibold border-2 border-white text-white hover:bg-white hover:text-blue-950 transition-all duration-200 w-fit"
                 >
                   School Information
@@ -323,18 +323,18 @@ export default function HomePage() {
             strengthen your team, NPSP has a pathway for you.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
+            <button
+              type="button"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out cursor-pointer"
             >
               Register
-            </Link>
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold border-2 border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
+            </button>
+            <button
+              type="button"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold border-2 border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out cursor-pointer"
             >
               Login
-            </Link>
+            </button>
           </div>
         </div>
       </section>

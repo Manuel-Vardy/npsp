@@ -260,13 +260,13 @@ export default function ImpactPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="#"
+              href="/for-teachers"
               className="inline-block px-6 py-3 rounded-lg font-semibold bg-[#FCD116] text-blue-900 hover:bg-yellow-300 transition-colors"
             >
               For Teachers
             </Link>
             <Link
-              href="#"
+              href="/for-schools"
               className="inline-block px-6 py-3 rounded-lg font-semibold border-2 border-white text-white hover:bg-white hover:text-green-900 transition-colors"
             >
               For Schools

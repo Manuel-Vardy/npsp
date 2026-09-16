@@ -283,13 +283,13 @@ export default function PaymentsPage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
-              href="#"
+              href="/for-teachers"
               className="inline-block px-6 py-3 rounded-lg font-semibold bg-[#FCD116] text-blue-900 hover:bg-yellow-300 transition-colors"
             >
               For Teachers
             </Link>
             <Link
-              href="#"
+              href="/about#contact"
               className="inline-block px-6 py-3 rounded-lg font-semibold border-2 border-white text-white hover:bg-white hover:text-blue-900 transition-colors"
             >
               Payment Support

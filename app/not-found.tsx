@@ -26,7 +26,7 @@ export default function NotFound() {
             Back to Home
           </Link>
           <Link
-            href="#"
+            href="/about#contact"
             className="inline-block px-6 py-3 rounded-lg font-semibold border-2 border-blue-800 text-blue-800 hover:bg-blue-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 transition-colors"
           >
             Contact Support

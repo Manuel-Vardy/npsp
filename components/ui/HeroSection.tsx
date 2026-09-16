@@ -7,6 +7,8 @@ interface HeroSectionProps {
   ctaButtons?: Array<{ label: string; href: string; variant: "primary" | "secondary" }>;
   backgroundVariant?: "blue" | "green" | "dark";
   backgroundImage?: string;
+  overlayClassName?: string;
+  fullHeight?: boolean;
   align?: "left" | "center";
   className?: string;
 }
@@ -23,6 +25,8 @@ export default function HeroSection({
   ctaButtons = [],
   backgroundVariant = "blue",
   backgroundImage,
+  overlayClassName = "bg-black/45",
+  fullHeight = !!backgroundImage,
   align = "center",
   className = "",
 }: HeroSectionProps) {
@@ -40,8 +44,10 @@ export default function HeroSection({
   return (
     <section
       className={`${bgClass} ${
-        backgroundImage
+        backgroundImage && fullHeight
           ? "w-full min-h-svh flex items-center -mt-[6.5rem] md:-mt-[7.5rem]"
+          : backgroundImage
+          ? "w-full -mt-[6.5rem] md:-mt-[7.5rem]"
           : "-mt-[6.5rem] md:-mt-[7.5rem]"
       } ${
         align === "left" ? "pt-[8.5rem] md:pt-[9.5rem] pb-20 md:pb-28" : "pb-20 px-4 sm:px-6 lg:px-8 pt-[8.5rem] md:pt-[7.5rem]"
@@ -59,7 +65,7 @@ export default function HeroSection({
             className="object-cover object-[center_25%]"
             aria-hidden="true"
           />
-          <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
+          <div className={`absolute inset-0 ${overlayClassName}`} aria-hidden="true" />
         </>
       )}
 

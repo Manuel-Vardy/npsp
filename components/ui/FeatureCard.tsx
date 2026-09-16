@@ -4,11 +4,12 @@ interface FeatureCardProps {
   title: string;
   description: string;
   icon?: ReactNode;
+  className?: string;
 }
 
-export default function FeatureCard({ title, description, icon }: FeatureCardProps) {
+export default function FeatureCard({ title, description, icon, className = "" }: FeatureCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col gap-3 hover:shadow-md transition-shadow">
+    <div className={`bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col gap-3 hover:shadow-md transition-shadow ${className}`}>
       {icon && (
         <div className="text-blue-700 text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-blue-50" aria-hidden="true">
           {icon}

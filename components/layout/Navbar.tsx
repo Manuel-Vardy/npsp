@@ -6,12 +6,9 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "About NPSP", href: "#" },
-  { label: "How It Works", href: "#" },
-  { label: "For Teachers", href: "#" },
-  { label: "For Schools", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "About NPSP", href: "/about" },
+  { label: "For Teachers", href: "/for-teachers" },
+  { label: "For Schools", href: "/for-schools" },
 ];
 
 export default function Navbar() {
