@@ -130,46 +130,7 @@ const processSteps: Array<{
       </div>
     ),
   },
-  {
-    label: "Get paid",
-    title: "Step 4 Disbursement & Transition",
-    description:
-      "The teacher receives their GH₵1,300 monthly allowance through their registered payment channel, then continues or transitions.",
-    detail: (
-      <div className="space-y-3">
-        <p className="text-sm text-gray-600">
-          Teachers receive their allowance through validated payment channels:
-        </p>
-        <div className="grid grid-cols-2 gap-2">
-          {["Bank Transfer", "MTN MoMo", "Telecel Cash", "AT Money"].map(
-            (channel) => (
-              <div
-                key={channel}
-                className="bg-green-50 border border-green-100 rounded-lg p-2 text-center text-xs font-semibold text-green-800"
-              >
-                {channel}
-              </div>
-            )
-          )}
-        </div>
-        <div className="space-y-2">
-          {[
-            "Continue engagement for remainder of 24-month cycle",
-            "Transition to permanent private employment",
-            "Pursue eligible public-sector opportunities",
-            "Exit through the structured process",
-          ].map((option) => (
-            <div key={option} className="flex items-start gap-2 text-sm text-gray-600">
-              <span className="text-blue-600 mt-0.5" aria-hidden="true">
-                →
-              </span>
-              {option}
-            </div>
-          ))}
-        </div>
-      </div>
-    ),
-  },
+
 ];
 
 export default function AboutPage() {
