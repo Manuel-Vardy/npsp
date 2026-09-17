@@ -261,7 +261,6 @@ export default function HomePage() {
               "/images/GNACOPS.png",
               "/images/GNAPS.png",
               "/images/GES.png",
-              "/images/trite-logo-black.png",
             ].map((logo, i) => (
               <div
                 key={i}
@@ -286,7 +285,6 @@ export default function HomePage() {
                 "/images/GNACOPS.png",
                 "/images/GNAPS.png",
                 "/images/GES.png",
-                "/images/trite-logo-black.png",
                 ...[
                   "/images/MOE.png",
                   "/images/NTC.png",
@@ -294,7 +292,6 @@ export default function HomePage() {
                   "/images/GNACOPS.png",
                   "/images/GNAPS.png",
                   "/images/GES.png",
-                  "/images/trite-logo-black.png",
                 ],
               ].map((logo, i) => (
                 <div
