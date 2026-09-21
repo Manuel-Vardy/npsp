@@ -90,7 +90,7 @@ export default function Navbar() {
                   role="menuitem"
                   className="block px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-[#FCD116] transition-colors duration-150"
                 >
-                  For Teachers
+                  Login as Teacher
                 </a>
                 <div className="h-px bg-white/10 mx-2 my-0.5" aria-hidden="true" />
                 <a
@@ -98,7 +98,7 @@ export default function Navbar() {
                   role="menuitem"
                   className="block px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-[#FCD116] transition-colors duration-150"
                 >
-                  For Schools
+                  Login as School
                 </a>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Navbar() {
                 className="absolute right-0 top-full mt-2 w-56 rounded-xl bg-black/80 backdrop-blur-xl border border-white/10 py-1.5 shadow-2xl opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 focus-within:opacity-100 focus-within:visible focus-within:translate-y-0 transition-all duration-200 ease-out"
               >
                 <a
-                  href="https://teacher.samuelboateng.dev"
+                  href="https://teacher.samuelboateng.dev/register"
                   role="menuitem"
                   className="block px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-[#FCD116] transition-colors duration-150"
                 >
@@ -128,7 +128,7 @@ export default function Navbar() {
                 </a>
                 <div className="h-px bg-white/10 mx-2 my-0.5" aria-hidden="true" />
                 <a
-                  href="https://school.samuelboateng.dev"
+                  href="https://school.samuelboateng.dev/register"
                   role="menuitem"
                   className="block px-4 py-2.5 text-sm text-white/90 hover:bg-white/10 hover:text-[#FCD116] transition-colors duration-150"
                 >
@@ -195,14 +195,14 @@ export default function Navbar() {
                 <p className="text-xs uppercase tracking-wider text-white/50 px-3 pb-1.5 pt-0.5">Register</p>
                 <div className="flex flex-col gap-1.5">
                   <a
-                    href="https://teacher.samuelboateng.dev"
+                    href="https://teacher.samuelboateng.dev/register"
                     onClick={() => setMenuOpen(false)}
                     className="w-full text-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-[#FCD116] text-blue-950 hover:bg-yellow-400 transition-all duration-200 ease-out"
                   >
                     Register as Teacher
                   </a>
                   <a
-                    href="https://school.samuelboateng.dev"
+                    href="https://school.samuelboateng.dev/register"
                     onClick={() => setMenuOpen(false)}
                     className="w-full text-center px-4 py-2.5 rounded-lg text-sm font-medium text-white/90 border border-white/20 hover:bg-white/10 hover:text-white transition-all duration-200 ease-out"
                   >
@@ -219,14 +219,14 @@ export default function Navbar() {
                     onClick={() => setMenuOpen(false)}
                     className="w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-white/90 border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                   >
-                    For Teachers
+                    Login as Teacher
                   </a>
                   <a
                     href="https://school.samuelboateng.dev/login"
                     onClick={() => setMenuOpen(false)}
                     className="w-full text-left px-3 py-2 rounded-lg text-sm font-medium text-white/90 border border-white/10 hover:bg-white/10 hover:text-white hover:border-white/30 transition-all duration-200 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
                   >
-                    For Schools
+                    Login as School
                   </a>
                 </div>
               </div>
