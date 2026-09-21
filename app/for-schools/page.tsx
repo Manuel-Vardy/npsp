@@ -212,12 +212,12 @@ export default function ForSchoolsPage() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
-              type="button"
-              className="inline-block px-7 py-3 rounded-lg font-semibold bg-[#0B1628] text-white hover:bg-[#0B1628]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1628] focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors cursor-pointer"
+            <a
+              href="https://school.samuelboateng.dev"
+              className="inline-block px-7 py-3 rounded-lg font-semibold bg-[#0B1628] text-white hover:bg-[#0B1628]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1628] focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"
             >
               Register Your School
-            </button>
+            </a>
             <Link
               href="/about#contact"
               className="inline-block px-7 py-3 rounded-lg font-semibold border-2 border-gray-300 text-gray-700 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"

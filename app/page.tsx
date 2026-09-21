@@ -323,18 +323,18 @@ export default function HomePage() {
             strengthen your team, NPSP has a pathway for you.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out cursor-pointer"
+            <a
+              href="https://teacher.samuelboateng.dev"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
             >
-              Register
-            </button>
-            <button
-              type="button"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold border-2 border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out cursor-pointer"
+              Register as a Teacher
+            </a>
+            <a
+              href="https://school.samuelboateng.dev"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold border-2 border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
             >
-              Login
-            </button>
+              Register Your School
+            </a>
           </div>
         </div>
       </section>
