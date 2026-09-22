@@ -324,13 +324,13 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="https://teacher.samuelboateng.dev"
+              href="https://teacher.samuelboateng.dev/register"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold bg-blue-950 text-white hover:bg-blue-900 hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
             >
               Register as a Teacher
             </a>
             <a
-              href="https://school.samuelboateng.dev"
+              href="https://school.samuelboateng.dev/register"
               className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-sm font-semibold border-2 border-blue-950 text-blue-950 hover:bg-blue-950 hover:text-white hover:-translate-y-0.5 shadow-lg hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-950 focus-visible:ring-offset-2 transition-all duration-200 ease-out"
             >
               Register Your School
