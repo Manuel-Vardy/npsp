@@ -231,7 +231,7 @@ export default function ForTeachersPage() {
             Ghana's private education sector.
           </p>
           <a
-            href="https://teacher.samuelboateng.dev/register"
+            href="https://excelliumgh.com/npsp/teacher/#/register"
             className="inline-block px-8 py-3 rounded-lg font-semibold bg-[#0B1628] text-white hover:bg-[#0B1628]/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0B1628] focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-colors"
           >
             Register as a Teacher
